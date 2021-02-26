@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+{% extends 'Esgb/layout.html' %}
+{% block content %}
+<div class="container-fluid">
+    <div class="column">
+        <div class="add-data-card" id="add-data-title">
+            <h1>{{content}}</h1>
+        </div>
+        <div id="add-data-form-container">
+             <div class="col-md-12 col-md-offset-1">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <form method="post">
+                            {% csrf_token %}
+                            <!--Personal information section-->
+                            <div>
+                                <p class="panel-title">Personal Information</p>
+                            </div>
+                            <section>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="First Name"  class="form-control"/>
+                                        </div>
+                                    </div> 
+                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Middle Name"  class="form-control"/>
+                                        </div>
+                                    </div> 
+                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Last Name"  class="form-control"/>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Current Location"  class="form-control"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Permanent Location"  class="form-control"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Contact Number"  class="form-control"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Contact Number"  class="form-control"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Email Address"  class="form-control"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Occupation"  class="form-control"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="date" class="form-control" placeholder="Date Of Birth" value="2070-01-01" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-md-3">
+                                        <select class="browser-default custom-select">
+                                            <option selected>Blood Group</option>
+                                            <option value="1">A+</option>
+                                            <option value="2">A-</option>
+                                            <option value="3">B+</option>
+                                            <option value="4">B-</option>
+                                            <option value="5">AB+</option>
+                                            <option value="6">AB-</option>
+                                            <option value="7">O+</option>
+                                            <option value="8">O-</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 radio-margin"> 
+                                        <label class="radio-inline" for="gender-0">
+                                          <input type="radio" name="gender" id="gender-0" value="Male" >
+                                          Male
+                                        </label> 
+                                        <label class="radio-inline" for="gender-1">
+                                          <input type="radio" name="gender" id="gender-1" value="Female">
+                                          Female
+                                        </label>
+                                        <label class="radio-inline" for="gender-2">
+                                          <input type="radio" name="gender" id="gender-2" value="Others">
+                                          Others
+                                        </label>
+                                      </div>
+                                </div>
+                            </section>
+                            <hr />
+                            <!--Academic information section-->
+                            <div>
+                                <p class="panel-title">Academic Information</p>
+                            </div>
+                            <section>
+                               <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-md-3" style="margin-bottom:10px;">
+                                        <select class="browser-default custom-select">
+                                            <option selected>Department</option>
+                                            <option value="1">BCT</option>
+                                            <option value="2">BCE</option>
+                                            <option value="3">BME</option>
+                                            <option value="4">BAE</option>
+                                            <option value="5">B.Arch</option>
+                                            <option value="6">BEL</option>
+                                            <option value="7">BEX</option>
+                                            <option value="8">BEI</option>
+                                        </select>
+                                    </div>
+                                   <div class="col-xs-12 col-sm-4 col-md-3">
+                                       <div class="form-group">
+                                            <input type="text" placeholder="Batch(In B.S)"  class="form-control"/>
+                                        </div>
+                                   </div>
+                               </div>
+                            </section>
+                            <hr />
+                            <!--Social media Connect-->
+                            <div>
+                                <p class="panel-title">Social Media</p>
+                            </div>
+                            <section>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Facebook ID"  class="form-control"/>
+                                        </div>
+                                    </div> 
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Twitter ID"  class="form-control"/>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Linkedin ID"  class="form-control"/>
+                                        </div>
+                                    </div> 
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Github ID"  class="form-control"/>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </section>
+                            <hr />
+                            <div style="text-align:center;">
+			                    <button type="submit" name="button" class="btn signup-button">Add</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

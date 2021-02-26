@@ -1,0 +1,41 @@
+﻿<!doctype html>
+{% extends 'Esgb/layout.html'%}
+{% load static %}
+{% block content %}
+<div class="container mt-3">
+    <div class="card-deck">
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'image/avatar1.png'%}" class="card-img-top" alt="...">
+            <div class="card-body alert alert-secondary mt-2 ml-1 mr-1 " role="alert">
+            <span style="font-size: 1.5em;color:black;">
+                <i class="fas fa-user"> :ESGB</i>
+            </span>
+            <br />
+            <span style="font-size: 1.5em;color:black;">
+                <i class="fas fa-map-marker-alt"> :Bhaktapur</i>
+            </span>
+            <span style="font-size: 1.5em;color:black;">
+                <i class="fas fa-phone"> :98XXXX00XX</i>
+            </span>
+            <span style="font-size: 1.5em;color:black;">
+                <i class="fas fa-envelope"> :esgb@mail.com</i>
+            </span>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'image/avatar2.png'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Name:</h5>
+            <p class="card-text"></p>
+            </div>
+        </div>
+         <div class="card" style="width: 18rem;">
+            <img src="{% static 'image/avatar1.png'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Name:</h5>
+            <p class="card-text"></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

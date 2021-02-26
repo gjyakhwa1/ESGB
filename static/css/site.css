@@ -1,0 +1,197 @@
+/*login page custom css*/
+/*class*/
+.user_card {
+    height: 400px;
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #c9dbdc;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 0.6;
+}
+.brand_logo_container {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    border-radius: 50%;
+    background-color: #000008;
+    padding: 10px;
+    text-align: center;
+}
+.brand_logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.form_container {
+    margin-top: 100px;
+}
+.login_btn {
+    width: 100%;
+    background: #703535;
+    color: white;
+}
+.login_btn:hover {
+    background-color:white;
+}
+.login_container {
+    padding: 0 2rem;
+}
+.input-group-text {
+    background: #703535 !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_user,
+.input_pass:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #703535 !important;
+}
+/*id*/
+#login-body-gradient {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    position: relative;
+}
+/*login css ends here*/
+
+/*Register page customs css*/
+/*class*/
+
+.register-data-card {
+    background-color: #352F44;
+    padding: 5px;
+    width: 35%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: center;
+}
+/*id*/
+#register-data-title {
+    color: #DBD8E3;
+    font-family: 'Segoe UI';
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 5px;
+}
+
+#register-form-container {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #DBD8E3;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 35%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+/*Register css ends here*/
+
+/*Add data css*/
+/*class*/
+.signup-button {
+    border-radius: 10px;
+    color: white;
+    background-color: #D72323;
+    align-content: center;
+    margin-bottom: 10px;
+    border: 1px solid #A7A9A2;
+    width: 25%;
+}
+
+    .signup-button:hover {
+        background-color: #AF0404;
+        color: white;
+    }
+.radio-margin {
+    margin-top: 10px;
+}
+.add-data-card {
+    background-color: #352F44;
+    padding: 5px;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: center;
+}
+/*id*/
+#add-data-form-container {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #DBD8E3;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#add-data-form-container p {
+    font-family: 'Segoe UI';
+    color: #373636;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+#add-data-title {
+    color: #DBD8E3;
+    font-family: 'Segoe UI';
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*Add data css ends here*/
+/*extras*/
+/*class*/
+.font-color {
+    color: #373636;
+}
+/*id*/
+#homepage-body-color 
+{
+    background-color: #e9ebee;
+}
+#font-style {
+    text-align: center;
+    color: #333333;
+    font-family: 'Segoe UI';
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight:500;
+    font-stretch:expanded;
+    font-size:20px;
+}
+/*Media*/
+@media screen and (max-width: 680px) {
+    #register-form-container {
+        width:80%;
+        margin:auto;
+    }
+    .register-data-card 
+    {
+        width:80%;
+        margin:auto;
+    }
+    .signup-button
+    {
+        width:50%;
+    }
+}
+/*extras ends here*/
